@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "45d9b114-c8bd-4186-a98e-81776af59698",
+		"name": "Parking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20245002"
+	},
+	"item": [
+		{
+			"name": "Buscar Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking/5683f9b9 f2b6 4f40 bd73 1fa914926d3d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"5683f9b9 f2b6 4f40 bd73 1fa914926d3d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entrando Veiculo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"license\":\"ASP-2683\",\r\n    \"state\":\"PR\",\r\n    \"model\":\"Logan \",\r\n    \"color\":\"Vermelho\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/001c3193 ad53 465c a303 5de46198a97d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"001c3193 ad53 465c a303 5de46198a97d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizacao do Veiculo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"license\":\"ASP-2683\",\r\n    \"state\":\"PR\",\r\n    \"model\":\"Logan \",\r\n    \"color\":\"Vermelho\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/5683f9b9 f2b6 4f40 bd73 1fa914926d3d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"5683f9b9 f2b6 4f40 bd73 1fa914926d3d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retirando Veiculo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking/88c2eb01 251e 409c b6e1 8b646d493f25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"88c2eb01 251e 409c b6e1 8b646d493f25"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
